@@ -86,3 +86,41 @@ body {
 .header .menu-extentions a.search i {
     color: red;
 }
+
+
+/* slider css */
+
+.slider {
+    position: relative;
+}
+
+.slider .item img {
+    width: 100%;
+}
+
+.slider .owl-nav .owl-next,
+.slider .owl-nav .owl-prev {
+    position: absolute;
+    top: 50%;
+    margin-top: -42px;
+}
+
+.slider .owl-nav .owl-next {
+    right: 20px;
+}
+
+.slider .owl-nav .owl-prev {
+    left: 20px;
+}
+
+.slider .owl-nav .owl-next span,
+.slider .owl-nav .owl-prev span {
+    font-size: 75px;
+}
+
+.owl-theme .owl-nav [class*="owl-"]:hover,
+.owl-theme .owl-nav [class*="owl-"]:focus {
+    background: none;
+    border: none!important;
+    outline: none;
+}
