@@ -20,8 +20,22 @@ a {
 .container {
     width: 1200px;
     margin: 0 auto;
-    display: flex;
     padding: 0 15px;
+}
+
+.no-padding {
+    padding: 0!important;
+}
+
+.no-margin {
+    margin: 0!important;
+}
+
+.row {
+    display: flex;
+    /* flex-wrap: wrap; */
+    margin-left: -15px;
+    margin-right: -15px;
 }
 
 .space-evenly {
@@ -30,6 +44,10 @@ a {
 
 .dir-column {
     flex-direction: column;
+}
+
+.span-1 {
+    flex-grow: 0;
 }
 
 body {
@@ -45,7 +63,7 @@ body {
     color: white;
 }
 
-.header .container {
+.header .row {
     justify-content: space-between;
     align-items: center;
 }
@@ -143,6 +161,7 @@ body {
 
 .our-collection .item {
     position: relative;
+    padding: 0 15px;
 }
 
 .our-collection .item .item-detail {
@@ -177,12 +196,19 @@ body {
 .section .section-header {
     text-align: center;
     margin-bottom: 40px;
+    position: relative;
+    z-index: 1;
 }
 
 .section .section-header .header-title {
     font-size: 26px;
     line-height: 48px;
     text-transform: uppercase;
+}
+
+.section .section-content {
+    position: relative;
+    z-index: 1;
 }
 
 .section .section-header .header-tags {
@@ -209,8 +235,6 @@ body {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    margin-left: -15px;
-    margin-right: -15px;
 }
 
 .new-product .product-item {
@@ -275,4 +299,177 @@ body {
     display: block;
     font-size: 18px;
     font-weight: bold;
+}
+
+
+/* OUR-SERVICE CSS*/
+
+.our-service {
+    background: #e23d3d;
+    color: white;
+    padding: 40px 0px;
+}
+
+.our-service .item {
+    padding: 0 15px;
+}
+
+.our-service .item .item-header {
+    display: flex;
+    align-items: center;
+    font-size: 17px;
+    text-transform: uppercase;
+    padding-bottom: 15px;
+    margin-bottom: 15px;
+    border-bottom: 1px solid white;
+}
+
+.our-service .item .item-header img {
+    width: auto;
+    height: 30px;
+    margin-right: 15px;
+}
+
+.our-service .item .item-desciption {
+    font-size: 13px;
+    line-height: 20px;
+}
+
+
+/* OUR-COLLECTION-V2 CSS*/
+
+.our-collection-v2 {
+    background-image: url('../imgs/collection-2-bg.png');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    padding: 95px 0px;
+    position: relative;
+}
+
+.our-collection-v2::after {
+    content: ' ';
+    display: block;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0px;
+    left: 0px;
+    background-color: black;
+    opacity: 0.6;
+    z-index: 0;
+}
+
+.our-collection-v2 .container {
+    display: flex;
+    justify-content: space-around;
+    z-index: 99;
+    position: relative;
+}
+
+.our-collection-v2 .item img {
+    width: 100%;
+}
+
+.our-collection-v2 .left-content {
+    display: flex;
+    flex-direction: column;
+    padding-left: 15px;
+}
+
+.our-collection-v2 .left-content .row {
+    margin-bottom: 15px;
+}
+
+.our-collection-v2 .left-content .item:first-child {
+    margin-right: 15px;
+}
+
+.bg-black {
+    background: black;
+    color: white;
+    margin-top: 0;
+    padding: 20px;
+    text-align: center;
+}
+
+.news .item {
+    padding: 0 15px;
+    margin-bottom: 10px;
+}
+
+.news .item .item-thumbnal {
+    width: 100%;
+}
+
+.news .item .item-title {
+    display: block;
+    color: white;
+    line-height: 24px;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+.news .item .item-desciption {
+    color: #979797;
+    font-size: 12px;
+    line-height: 24px;
+}
+
+.news .item .item-date-created {
+    color: #b8b8b8;
+    line-height: 24px;
+}
+
+
+/* CONTACT-US */
+
+.contact-us {
+    color: white;
+    margin-top: 0px;
+    background: url('../imgs/contact-bg.png');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    padding: 95px 0px;
+    position: relative;
+}
+
+.contact-us::after {
+    content: ' ';
+    display: block;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0px;
+    left: 0px;
+    background-color: black;
+    opacity: 0.6;
+    z-index: 0;
+}
+
+.contact-us .section-content {
+    margin: 80px 0px;
+}
+
+.contact-us .col-left {
+    width: 50%;
+    padding: 0 15px;
+}
+
+.contact-us .team-name {
+    font-size: 24px;
+    line-height: 36px;
+    margin-bottom: 15px;
+    text-transform: uppercase;
+}
+
+.contact-us .team-detail li {
+    color: #aeaeae;
+    font-size: 20px;
+    line-height: 36px;
+}
+
+.contact-us .team-detail li i {
+    margin-right: 15px;
 }
