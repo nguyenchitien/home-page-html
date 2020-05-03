@@ -124,3 +124,40 @@ body {
     border: none!important;
     outline: none;
 }
+
+.owl-theme .owl-nav {
+    margin-top: 0px;
+}
+
+
+/* COLLECTION CSS */
+
+.our-collections {
+    background: #eaeaea;
+}
+
+.our-collections .item {
+    position: relative;
+}
+
+.our-collections .item .item-detail {
+    position: absolute;
+    top: 15%;
+    left: 5%;
+}
+
+.our-collections .item .item-detail .item-title {
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 48px;
+}
+
+.our-collections .item .item-detail .item-link {
+    display: inline-block;
+    color: #e23d3d;
+    text-transform: uppercase;
+    padding: 10px 25px;
+    font-weight: bold;
+    border: 3px solid #e23d3d;
+}
