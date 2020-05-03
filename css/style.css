@@ -38,7 +38,6 @@ body {
 .header {
     background: #000;
     color: white;
-    height: 65px;
 }
 
 .header .container {
@@ -63,6 +62,7 @@ body {
     text-transform: uppercase;
     line-height: 32px;
     padding: 16px 0px;
+    border-bottom: 1px solid transparent;
 }
 
 .header .menu li {
@@ -74,7 +74,7 @@ body {
 }
 
 .header .menu a:hover {
-    border-bottom: 1px solid red;
+    border-bottom: 1px solid #e23d3d;
 }
 
 .header .menu-extentions a i {
@@ -84,7 +84,7 @@ body {
 }
 
 .header .menu-extentions a.search i {
-    color: red;
+    color: #e23d3d;
 }
 
 
